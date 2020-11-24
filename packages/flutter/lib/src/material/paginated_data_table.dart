@@ -468,7 +468,7 @@ class PaginatedDataTableState extends State<PaginatedDataTable> {
                 scrollDirection: Axis.horizontal,
                 dragStartBehavior: widget.dragStartBehavior,
                 child: ConstrainedBox(
-                  constraints: BoxConstraints(minWidth: constraints.minWidth),
+                  constraints: BoxConstraints(minWidth: constraints.maxWidth),
                   child: DataTable(
                     key: _tableKey,
                     columns: widget.columns,
